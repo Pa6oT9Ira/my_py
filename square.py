@@ -18,7 +18,8 @@ def polygon(t, n, length):
 def circle(t, r):
 	circumference = 2 * math.pi * r
 	print('2 * math.pi * r =', circumference )
-	n = 10
+	n = int(circumference / 3)+1
+	print('n - ', n)
 	length = circumference / n
 	print(length)
 	polygon(t, n, length)
@@ -33,13 +34,4 @@ for i in range(4):
 
 circle(bob, 100)
 
-ln1 = (360.0/10)*2
-print(ln1)
-
-bob.lt(ln1)
-bob.fd(100*2)
-ln1 = (360.0/10)*3
-bob.lt(ln1)
-ln2 = (2 * math.pi * 100)/10
-bob.fd(10)
 turtle.mainloop()
