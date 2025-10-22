@@ -49,6 +49,15 @@ def polygon(t, n, length):
     angle = 360.0/n
     polyline(t, n, length, angle)
 
+def polygon1(t, n, length):
+    """Draws a polygon with n sides.
+
+    t: Turtle
+    n: number of sides
+    length: length of each side.
+    """
+    angle = 180.0/n
+    polyline(t, n, length, angle)
 
 def arc(t, r, angle):
     """Draws an arc with the given radius and angle.
@@ -77,6 +86,14 @@ def circle(t, r):
     """
     arc(t, r, 360)
 
+def circle1(t, r):
+    """Draws a circle with the given radius.
+
+    t: Turtle
+    r: radius
+    """
+    arc(t, r, 90)
+
 
 # the following condition checks whether we are
 # running as a script, in which case run the test code,
@@ -87,11 +104,30 @@ if __name__ == '__main__':
 
     # draw a circle centered on the origin
     radius = 100
-    bob.pu()
-    bob.fd(radius)
+#    bob.pu()
+#    bob.fd(radius)
+#    bob.lt(90)
+#    bob.pd()
+    circle1(bob, radius)
     bob.lt(90)
-    bob.pd()
-    circle(bob, radius)
+    circle1(bob, radius)
+    rad1 = 360 / 5
+    bob.lt(172)
+    circle1(bob, radius)
+    bob.lt(90)
+    circle1(bob, radius)
+    bob.lt(172)
+    circle1(bob, radius)
+    bob.lt(90)
+    circle1(bob, radius)    
+    bob.lt(172)
+    circle1(bob, radius)
+    bob.lt(90)
+    circle1(bob, radius)
+    bob.lt(172)
+    circle1(bob, radius)
+    bob.lt(90)
+    circle1(bob, radius)
 
     # wait for the user to close the window
     turtle.mainloop()
