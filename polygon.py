@@ -108,26 +108,25 @@ if __name__ == '__main__':
 #    bob.fd(radius)
 #    bob.lt(90)
 #    bob.pd()
-    circle1(bob, radius)
-    bob.lt(90)
-    circle1(bob, radius)
-    rad1 = 360 / 5
-    bob.lt(172)
-    circle1(bob, radius)
-    bob.lt(90)
-    circle1(bob, radius)
-    bob.lt(172)
-    circle1(bob, radius)
-    bob.lt(90)
-    circle1(bob, radius)    
-    bob.lt(172)
-    circle1(bob, radius)
-    bob.lt(90)
-    circle1(bob, radius)
-    bob.lt(172)
-    circle1(bob, radius)
-    bob.lt(90)
-    circle1(bob, radius)
 
-    # wait for the user to close the window
-    turtle.mainloop()
+arc(bob, 100, -180)
+
+for i in range(2):
+	arc(bob,80.0, 80.0)	
+	bob.lt(180-80.0)
+bob.lt(360/4)
+for i in range(2):
+	arc(bob,80.0, 80.0)	
+	bob.lt(180-80.0)
+bob.lt(360/4)
+for i in range(2):
+	arc(bob,80.0, 80.0)	
+	bob.lt(180-80.0)
+bob.lt(360/4)
+for i in range(2):
+	arc(bob,80.0, 80.0)	
+	bob.lt(180-80.0)
+
+
+# wait for the user to close the window
+turtle.mainloop()
